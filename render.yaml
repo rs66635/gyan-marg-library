@@ -4,7 +4,7 @@ services:
     env: java
     plan: free
     region: oregon
-    buildCommand: mvn -DskipTests package
+    buildCommand: ./mvnw -DskipTests package
     startCommand: java -Dserver.port=$PORT -jar target/gyan-marg-library-0.0.1-SNAPSHOT.jar
     envVars:
       - key: JAVA_TOOL_OPTIONS
