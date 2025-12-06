@@ -1,11 +1,25 @@
-# Production Dockerfile - copies the pre-built JAR into a small JRE image
-# Build the jar locally first: mvn -DskipTests package
+# Multi-stage Dockerfile for GyanMarg Library
+# Build with Maven (JDK 21), run with a lightweight JRE
 
-FROM eclipse-temurin:21-jre as runtime
+FROM maven:3.9.4-eclipse-temurin-21 AS builder
+WORKDIR /workspace
+
+# Copy Maven wrapper and pom first for caching
+COPY pom.xml mvnw mvnw.cmd ./
+COPY .mvn .mvn
+
+# Copy source
+COPY src ./src
+
+# Build the application (skip tests for speed)
+RUN mvn -B -DskipTests package
+
+# Runtime image
+FROM eclipse-temurin:21-jre
 WORKDIR /app
 
-# Copy the repackaged Spring Boot jar from the Maven target directory
-COPY target/gyan-marg-library-0.0.1-SNAPSHOT.jar /app/app.jar
+# Copy jar from builder
+COPY --from=builder /workspace/target/gyan-marg-library-0.0.1-SNAPSHOT.jar ./app.jar
 
 ENV JAVA_TOOL_OPTIONS=-Xmx512m
 EXPOSE 8080
