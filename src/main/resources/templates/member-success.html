@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Member Registered</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand">GyanMarg Library</div>
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/admin/dashboard">Dashboard</a>
+        <a th:if="${hideMemberLogin} == null or !${hideMemberLogin}" href="/member/login">Member Login</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">About Us</a>
+    </div>
+</nav>
+<div class="container">
+    <h2>Member Registered Successfully</h2>
+    <p>Member ID: <span th:text="${saved.id}">1</span></p>
+    <p>Name: <span th:text="${saved.name}">Name</span></p>
+    <p>Mobile: <span th:text="${saved.mobileNumber}">Mobile</span></p>
+    <p>Password: <span th:text="${saved.password}">password</span></p>
+    <p th:text="${whatsappMessage}"></p>
+</div>
+</body>
+</html>

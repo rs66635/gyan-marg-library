@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Member Login</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand">GyanMarg Library</div>
+    <div class="menu">
+        <a href="/">Home</a>
+        <a th:if="${hideAdminLogin} == null or !${hideAdminLogin}" href="/admin/login">Admin Login</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">About Us</a>
+    </div>
+</nav>
+<div class="container">
+    <h2>Member Login</h2>
+    <form method="post" action="/member/login">
+        <label>Member ID</label><br>
+        <input name="memberId" required type="number"><br>
+        <label>Password</label><br>
+        <input type="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+    <p><a href="/member/reset">Forgot / Reset Password</a></p>
+    <p th:if="${error}" th:text="${error}" style="color:red;"></p>
+</div>
+</body>
+</html>

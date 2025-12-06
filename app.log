@@ -1,0 +1,33 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2025-12-06T17:35:36.652+05:30  INFO 9156 --- [           main] c.e.demo.GyanMargLibraryApplication      : Starting GyanMargLibraryApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 9156 (D:\project\gyan-marg-library\target\gyan-marg-library-0.0.1-SNAPSHOT.jar started by RAKESH KUMAR in D:\project\gyan-marg-library)
+2025-12-06T17:35:36.655+05:30  INFO 9156 --- [           main] c.e.demo.GyanMargLibraryApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T17:35:37.161+05:30  INFO 9156 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-06T17:35:37.216+05:30  INFO 9156 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2025-12-06T17:35:37.701+05:30  INFO 9156 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-12-06T17:35:37.709+05:30  INFO 9156 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T17:35:37.709+05:30  INFO 9156 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-12-06T17:35:37.763+05:30  INFO 9156 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T17:35:37.764+05:30  INFO 9156 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1057 ms
+2025-12-06T17:35:37.788+05:30  INFO 9156 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-06T17:35:37.927+05:30  INFO 9156 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:gyanmarg user=SA
+2025-12-06T17:35:37.928+05:30  INFO 9156 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-06T17:35:37.935+05:30  INFO 9156 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:gyanmarg'
+2025-12-06T17:35:38.054+05:30  INFO 9156 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-06T17:35:38.105+05:30  INFO 9156 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-12-06T17:35:38.106+05:30  INFO 9156 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-12-06T17:35:38.218+05:30  INFO 9156 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-12-06T17:35:38.326+05:30  INFO 9156 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-06T17:35:38.490+05:30  INFO 9156 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-12-06T17:35:38.882+05:30  INFO 9156 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-12-06T17:35:38.927+05:30  INFO 9156 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-06T17:35:39.183+05:30  WARN 9156 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-06T17:35:39.440+05:30  INFO 9156 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-12-06T17:35:39.464+05:30  INFO 9156 --- [           main] c.e.demo.GyanMargLibraryApplication      : Started GyanMargLibraryApplication in 3.104 seconds (process running for 3.512)

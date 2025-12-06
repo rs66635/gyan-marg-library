@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand">GyanMarg Library</div>
+    <div class="menu">
+        <a href="/">Home</a>
+        <a th:if="${hideMemberLogin} == null or !${hideMemberLogin}" href="/member/login">Member Login</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">About Us</a>
+    </div>
+</nav>
+<div class="container">
+    <h2>Members</h2>
+    <div style="margin-bottom:12px;">
+        <a class="button" href="/admin/member/new">New Member</a>
+    </div>
+    <form method="get" action="/admin/member/search">
+        <input name="q" placeholder="Search by id/name/mobile">
+        <button type="submit">Search</button>
+    </form>
+    <table>
+        <thead>
+        <tr><th>ID</th><th>Name</th><th>Mobile</th><th>Aadhaar</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+        <th:block th:each="m : ${members}">
+            <tr>
+                <td th:text="${m.id}">1</td>
+                <td th:text="${m.name}">Name</td>
+                <td th:text="${m.mobileNumber}">Mobile</td>
+                <td th:text="${m.aadhaarNumber}">Aadhaar</td>
+                <td>
+                    <a th:href="@{'/admin/member/edit/' + ${m.id}}">Edit</a> |
+                    <a th:href="@{'/admin/member/delete/' + ${m.id}}">Delete</a>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

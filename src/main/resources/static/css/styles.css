@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; margin:0; padding:0; background: linear-gradient(135deg, #f6f9ff, #fffaf0); color:#333 }
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:10px 20px; background:linear-gradient(90deg,#6dd3ff,#7effc0); }
+.navbar .brand { font-weight:bold; font-size:20px }
+.navbar .menu a { margin-left:15px; text-decoration:none; color:#08203a; font-weight:600 }
+.container { padding:20px; max-width:900px; margin:20px auto; background: rgba(255,255,255,0.9); border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08) }
+h1,h2 { color:#0b486b }
+table { width:100%; border-collapse:collapse }
+td,th { padding:8px; border-bottom:1px solid #eee }
+button { background:#0b486b; color:white; border:none; padding:8px 12px; border-radius:4px }
+input,select { padding:6px; border:1px solid #ddd; border-radius:4px }

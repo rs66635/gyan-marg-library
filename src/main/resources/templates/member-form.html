@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Member Form</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand">GyanMarg Library</div>
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/admin/dashboard">Dashboard</a>
+        <a th:if="${hideMemberLogin} == null or !${hideMemberLogin}" href="/member/login">Member Login</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">About Us</a>
+    </div>
+</nav>
+<div class="container">
+    <h2>Register / Edit Member</h2>
+    <form method="post" action="/admin/member/save">
+        <input type="hidden" name="id" th:value="${member.id}">
+        <label>Name</label><br>
+        <input name="name" required th:value="${member.name}"><br>
+        <label>Mobile Number</label><br>
+        <input name="mobileNumber" required th:value="${member.mobileNumber}"><br>
+        <label>Aadhaar Number</label><br>
+        <input name="aadhaarNumber" required th:value="${member.aadhaarNumber}"><br>
+        <button type="submit">Save</button>
+    </form>
+</div>
+</body>
+</html>
