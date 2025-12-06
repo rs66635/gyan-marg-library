@@ -1,3 +1,7 @@
+member-home.html:
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,8 +32,8 @@
         <input type="number" name="seat" min="1" max="10"><br>
         <button type="submit">Book</button>
     </form>
-    <form method="post" action="/member/checkout" style="margin-top:20px;">
-        <button type="submit">Checkout (Clock Out)</button>
+    <form method="post" action="/member/logout" style="margin-top:20px;">
+        <button type="submit">Logout</button>
     </form>
     <p th:if="${message}" th:text="${message}" style="color:green;"></p>
 </div>

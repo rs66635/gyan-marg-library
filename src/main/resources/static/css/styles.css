@@ -8,3 +8,14 @@ table { width:100%; border-collapse:collapse }
 td,th { padding:8px; border-bottom:1px solid #eee }
 button { background:#0b486b; color:white; border:none; padding:8px 12px; border-radius:4px }
 input,select { padding:6px; border:1px solid #ddd; border-radius:4px }
+
+/* new styles for admin dashboard buttons */
+.page-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px }
+.page-header h2 { margin:0 }
+.page-actions { display:flex; gap:10px; align-items:center }
+.btn { display:inline-block; padding:8px 12px; border-radius:6px; text-decoration:none; font-weight:700; color:#fff }
+.btn-primary { background: linear-gradient(90deg,#0b486b,#0f9b8e); box-shadow:0 2px 6px rgba(11,72,107,0.2) }
+.btn-outline { background:transparent; color:#0b486b; border:2px solid #0b486b }
+
+/* make btn-outline less heavy when hovered */
+.btn-outline:hover { background: #0b486b; color:white }

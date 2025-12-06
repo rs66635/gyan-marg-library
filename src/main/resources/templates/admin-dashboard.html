@@ -16,10 +16,14 @@
     </div>
 </nav>
 <div class="container">
-    <h2>Members</h2>
-    <div style="margin-bottom:12px;">
-        <a class="button" href="/admin/member/new">New Member</a>
+    <div class="page-header">
+        <h2>Members</h2>
+        <div class="page-actions">
+            <a class="btn btn-outline" href="/admin/logout">Logout</a>
+            <a class="btn btn-primary" href="/admin/member/new">New Member</a>
+        </div>
     </div>
+
     <form method="get" action="/admin/member/search">
         <input name="q" placeholder="Search by id/name/mobile">
         <button type="submit">Search</button>

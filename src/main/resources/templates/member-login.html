@@ -11,7 +11,9 @@
     <div class="menu">
         <a href="/">Home</a>
         <a th:if="${hideAdminLogin} == null or !${hideAdminLogin}" href="/admin/login">Admin Login</a>
-        <a href="/contact">Contact</a>
+		<a href="/admin/login">Admin Login</a>
+		<a href="/member/login">Member Login</a>
+		<a href="/contact">Contact</a>
         <a href="/about">About Us</a>
     </div>
 </nav>
@@ -26,6 +28,7 @@
     </form>
     <p><a href="/member/reset">Forgot / Reset Password</a></p>
     <p th:if="${error}" th:text="${error}" style="color:red;"></p>
+    <p th:if="${message}" th:text="${message}" style="color:green;"></p>
 </div>
 </body>
 </html>

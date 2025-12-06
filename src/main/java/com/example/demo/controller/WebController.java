@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
@@ -115,6 +116,13 @@ public class WebController {
         return "admin-dashboard";
     }
 
+    @GetMapping("/admin/logout")
+    public String adminLogout(HttpSession session) {
+        // invalidate admin session
+        session.invalidate();
+        return "redirect:/admin/login";
+    }
+
     // Member pages
     @GetMapping("/member/login")
     public String memberLogin(Model model) {
@@ -162,20 +170,18 @@ public class WebController {
         return "member-home";
     }
 
-    @PostMapping("/member/checkout")
-    public String checkout(HttpSession session, Model model) {
+    @PostMapping("/member/logout")
+    public String logOut(HttpSession session, Model model, RedirectAttributes redirectAttributes) {
         Object mid = session.getAttribute("memberId");
         if (mid == null) return "redirect:/member/login";
         Long in = (Long) session.getAttribute("clockIn");
         long out = System.currentTimeMillis();
         long totalMs = out - (in == null ? out : in);
         long minutes = totalMs / 60000;
-        model.addAttribute("hideAdminLogin", true);
-        model.addAttribute("message", "You spent " + minutes + " minutes");
-        session.removeAttribute("clockIn");
-        session.removeAttribute("shift");
-        session.removeAttribute("seat");
-        return "member-home";
+        // provide feedback via flash attribute and invalidate session
+        redirectAttributes.addFlashAttribute("message", "You spent " + minutes + " minutes");
+        session.invalidate();
+        return "redirect:/member/login";
     }
 
     @GetMapping("/contact")

@@ -7,32 +7,70 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.4)
 
-2025-12-06T17:35:36.652+05:30  INFO 9156 --- [           main] c.e.demo.GyanMargLibraryApplication      : Starting GyanMargLibraryApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 9156 (D:\project\gyan-marg-library\target\gyan-marg-library-0.0.1-SNAPSHOT.jar started by RAKESH KUMAR in D:\project\gyan-marg-library)
-2025-12-06T17:35:36.655+05:30  INFO 9156 --- [           main] c.e.demo.GyanMargLibraryApplication      : No active profile set, falling back to 1 default profile: "default"
-2025-12-06T17:35:37.161+05:30  INFO 9156 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-06T17:35:37.216+05:30  INFO 9156 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
-2025-12-06T17:35:37.701+05:30  INFO 9156 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2025-12-06T17:35:37.709+05:30  INFO 9156 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-06T17:35:37.709+05:30  INFO 9156 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
-2025-12-06T17:35:37.763+05:30  INFO 9156 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-12-06T17:35:37.764+05:30  INFO 9156 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1057 ms
-2025-12-06T17:35:37.788+05:30  INFO 9156 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-06T17:35:37.927+05:30  INFO 9156 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:gyanmarg user=SA
-2025-12-06T17:35:37.928+05:30  INFO 9156 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-06T17:35:37.935+05:30  INFO 9156 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:gyanmarg'
-2025-12-06T17:35:38.054+05:30  INFO 9156 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-06T17:35:38.105+05:30  INFO 9156 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
-2025-12-06T17:35:38.106+05:30  INFO 9156 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2025-12-06T17:35:38.218+05:30  INFO 9156 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2025-12-06T17:35:38.326+05:30  INFO 9156 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-06T17:35:38.490+05:30  INFO 9156 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2025-12-06T17:35:38.882+05:30  INFO 9156 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-12-06T17:35:38.927+05:30  INFO 9156 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-06T17:35:39.183+05:30  WARN 9156 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-06T17:35:39.440+05:30  INFO 9156 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2025-12-06T17:35:39.464+05:30  INFO 9156 --- [           main] c.e.demo.GyanMargLibraryApplication      : Started GyanMargLibraryApplication in 3.104 seconds (process running for 3.512)
-2025-12-06T17:36:05.989+05:30  INFO 9156 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-06T17:36:05.989+05:30  INFO 9156 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-06T17:36:05.990+05:30  INFO 9156 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-06T19:36:35.318+05:30  WARN 9156 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m25s596ms804µs100ns).
-2025-12-06T19:57:38.324+05:30  WARN 9156 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m2s646ms788µs100ns).
+2025-12-06T22:04:38.481+05:30  INFO 21172 --- [           main] c.e.demo.GyanMargLibraryApplication      : Starting GyanMargLibraryApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 21172 (D:\project\gyan-marg-library\target\gyan-marg-library-0.0.1-SNAPSHOT.jar started by RAKESH KUMAR in D:\project\gyan-marg-library)
+2025-12-06T22:04:38.484+05:30  INFO 21172 --- [           main] c.e.demo.GyanMargLibraryApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T22:04:39.001+05:30  INFO 21172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-06T22:04:39.049+05:30  INFO 21172 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2025-12-06T22:04:39.549+05:30  INFO 21172 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-12-06T22:04:39.556+05:30  INFO 21172 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T22:04:39.556+05:30  INFO 21172 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-12-06T22:04:39.612+05:30  INFO 21172 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T22:04:39.613+05:30  INFO 21172 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1067 ms
+2025-12-06T22:04:39.638+05:30  INFO 21172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-06T22:04:39.782+05:30  INFO 21172 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:gyanmarg user=SA
+2025-12-06T22:04:39.783+05:30  INFO 21172 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-06T22:04:39.791+05:30  INFO 21172 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:gyanmarg'
+2025-12-06T22:04:39.928+05:30  INFO 21172 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-06T22:04:39.984+05:30  INFO 21172 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-12-06T22:04:39.986+05:30  INFO 21172 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-12-06T22:04:40.111+05:30  INFO 21172 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-12-06T22:04:40.222+05:30  INFO 21172 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-06T22:04:40.400+05:30  INFO 21172 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-12-06T22:04:40.816+05:30  INFO 21172 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-12-06T22:04:40.853+05:30  INFO 21172 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-06T22:04:41.169+05:30  WARN 21172 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-06T22:04:41.472+05:30  INFO 21172 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-12-06T22:04:41.487+05:30  INFO 21172 --- [           main] c.e.demo.GyanMargLibraryApplication      : Started GyanMargLibraryApplication in 3.315 seconds (process running for 3.717)
+2025-12-06T22:05:29.612+05:30  INFO 21172 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T22:05:29.612+05:30  INFO 21172 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T22:05:29.613+05:30  INFO 21172 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Exception in thread "http-nio-8080-exec-8" java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:143)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:424)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386)
+	at ch.qos.logback.classic.Logger.log(Logger.java:780)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Logger.java:983)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1010)
+	at java.logging/java.util.logging.Logger.logp(Logger.java:1287)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1758)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+	... 17 more
+Exception in thread "http-nio-8080-exec-4" java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:143)
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:424)
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386)
+	at ch.qos.logback.classic.Logger.log(Logger.java:780)
+	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+	at java.logging/java.util.logging.Logger.log(Logger.java:983)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1010)
+	at java.logging/java.util.logging.Logger.logp(Logger.java:1287)
+	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175)
+	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1758)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+	... 17 more

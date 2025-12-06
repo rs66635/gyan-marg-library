@@ -11,7 +11,9 @@
     <div class="menu">
         <a href="/">Home</a>
         <a th:if="${hideMemberLogin} == null or !${hideMemberLogin}" href="/member/login">Member Login</a>
-        <a href="/contact">Contact</a>
+		<a href="/admin/login">Admin Login</a>
+		<a href="/member/login">Member Login</a>
+		<a href="/contact">Contact</a>
         <a href="/about">About Us</a>
     </div>
 </nav>
