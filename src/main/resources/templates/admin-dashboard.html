@@ -30,7 +30,7 @@
     </form>
     <table>
         <thead>
-        <tr><th>ID</th><th>Name</th><th>Mobile</th><th>Aadhaar</th><th>Actions</th></tr>
+        <tr><th>ID</th><th>Name</th><th>Mobile</th><th>Aadhaar</th><th>Email_Id</th><th>Actions</th><th>MemberDetails</th></tr>
         </thead>
         <tbody>
         <th:block th:each="m : ${members}">
@@ -39,9 +39,14 @@
                 <td th:text="${m.name}">Name</td>
                 <td th:text="${m.mobileNumber}">Mobile</td>
                 <td th:text="${m.aadhaarNumber}">Aadhaar</td>
+				<td th:text="${m.emailId}">EmailId</td>
+				
                 <td>
                     <a th:href="@{'/admin/member/edit/' + ${m.id}}">Edit</a> |
                     <a th:href="@{'/admin/member/delete/' + ${m.id}}">Delete</a>
+                </td>
+                <td>
+                    <a th:href="@{'/admin/member/details/' + ${m.id}}">View Details</a>
                 </td>
             </tr>
         </th:block>

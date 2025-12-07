@@ -11,4 +11,5 @@ import java.util.Optional;
 public interface MemberRepository extends JpaRepository<Member, Long> {
     List<Member> findByNameContainingIgnoreCase(String name);
     Optional<Member> findByMobileNumber(String mobileNumber);
+    Optional<Member> findByEmailId(String emailId);
 }
