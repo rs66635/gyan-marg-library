@@ -19,6 +19,7 @@ public class WebController {
 
 	@GetMapping({ "/", "/home" })
 	public String home(Model model) {
+		System.out.println("Hello");
 		model.addAttribute("facilities", List.of("Reading Room", "Computer Lab", "Children Section",
 				"Magazine & Newspapers", "Reference Section", "WiFi"));
 		return "home";
